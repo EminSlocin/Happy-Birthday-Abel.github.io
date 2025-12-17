@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY BIRTHDAY ABELL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
+    <div class="petals" id="petalsContainer"></div>
+    
+    
+    <div class="container">
+        <div class="progress-bar">
+            <div class="progress" id="progressBar"></div>
+        </div>
+
+        <!-- Step 1: Greeting -->
+        <div class="step" id="step1">
+            <h1>Happy Birthday, Cantikkkk!</h1>
+            <p>Yuk Lanjutttt!! pencetttt tomboll di bawah yak</p>
+            <img src="D.jpeg" alt="foto-depan" class="gambar-depan">
+            <button class="btn" onclick="nextStep()">Bukaaa pesannyaaa yuk</button>
+        </div>
+
+        <!-- Step 2: Name Input -->
+        <div class="step" id="step2">
+            <h2>Happy Birthday!</h2>
+            <p>What's the name of the most beautiful birthday girl in the world?</p>
+            <p1>"Isi Nama Wanita Cantik yang lagi buka website inii"</p1>
+            <input type="text" class="name-input" id="nameInput" placeholder="Enter your name">
+            <button class="btn" onclick="saveName()">NEXTTT!!</button>
+        </div>
+
+        <!-- Step 3: Heart Animation -->
+        <div class="step" id="step3">
+            <h2>For You, <span id="displayName"> Maniezzz</span></h2>
+            <p>Click Hati Cintaa untuk yang lagii Ulang Tahun!</p>
+            <div class="heart" id="interactiveHeart" onclick="createHearts()"></div>
+            <div id="heartMessage" class="message-box">
+                <p>Awwww Lucunyeuu, <span id="heartName"> Cantikkk inii</span>!!</p>
+            </div>
+            <button class="btn" onclick="nextStep()">Lanjutt yukk, klik lagi</button>
+        </div>
+
+        <!-- Step 4: Birthday Message -->
+        <div class="step" id="step4">
+            <h2>Sedikit Pesan dulu yak!</h2>
+            <div class="photo-frame">
+                <!-- Replace with your image path -->
+                <img src="C.jpeg" alt="Beautiful You">
+            </div>
+            <div id="typedMessage" class="message-box">
+                <p class="typing-effect" id="typingText"></p>
+            </div>
+            <button class="btn" onclick="nextStep()">YUK NEXT LAGII</button>
+        </div>
+
+        <!-- Step 5: Memory Lane -->
+        <div class="step" id="step5">
+            <h2>Foto-Foto Cantik-Imut</h2>
+            <p>Jangann Sampee kitaa Lupaa sama Pap Maniss Cantiknyaa Abell</p>
+            <div class="memory-container">
+                <div class="polaroid">
+                    <img src="A.jpeg" alt="Memory 1">
+                    <div class="polaroid-caption">Awwww CANTIKNYAAA</div>
+                </div>
+                <div class="polaroid">
+                    <img src="B.jpeg" alt="Memory 2">
+                    <div class="polaroid-caption">III Imut bangett sihh</div>
+                </div>
+               
+            </div>
+            <button class="btn" onclick="nextStep()">Tomboll terakhirr inii</button>
+        </div>
+
+        <!-- Step 6: Final Wish -->
+        <div class="step" id="step6">
+            <h1>🎉 Happy Birthday, <span id="finalName">ABELLL</span>!! 🎂</h1>
+        
+            <p>✨ Di umur yang ke-19 ini, doa terbaikku selalu untukmu. ✨</p>
+            <p>🌟 Selamat ulang tahun yang ke-19, Abel. Semoga harimu penuh dengan kebahagiaan yang tak terhingga, tawa yang manis, dan cinta yang memenuhi hatimu. 🌌</p>
+            <p>⏳ Di usia 19 tahun ini, Abel diberkati dan pasti bisa melampaui semua mimpi-mimpi hebatmu. Semoga kekuatan, panjang umur, serta kesehatan selalu menyertaimu setiap hari. 🥰</p>
+            <p>💌 Semoga kebahagiaan dan kedamaian selalu tinggal di hatimu. Elan engga sabar melihat senyum maniss Abel setelah melihat pesan ini 💫</p>
+        
+            <div class="signature">Elan, 🦊</div>
+        
+        </div>
+        
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
